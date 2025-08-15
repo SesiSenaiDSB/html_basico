@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <title>Tabelas Avançadas e Multimídia</title>
     <style>
+        table {
+            width: 50%; /* Largura de 50% da tela */
+            border-collapse: collapse; /* Remove o espaçamento entre as bordas */
+            margin-bottom: 20px; /* Espaço inferior para separar da próxima seção */
+        }
+        th, td {
+            border:1px solid black;
+            padding: 8px; /* Espaçamento interno */
+        }
+        th {
+            background-color: #333; /* Cor de fundo */
+            color: white; /* Cor do texto */
+        }
+        tfoot {
+            background-color: #ffff99;
+            font-weight:bolder; /* Negrito */
+        }
+        td.num-right {
+            text-align: right; /* Alinha texto à direita */
+        }
 
-        /* Começar digitação (Aqui) */
-  
     </style>
+
 </head>
 <body>
     <h1>Relatório de Vendas</h1>
@@ -30,38 +49,49 @@
         <tbody>
             <tr>
                 <!-- Linha de dados para a região Norte -->
-                <td>Norte</td>
-                <td>R$ 10.000</td>
-                <td>R$ 12.000</td>
-                <td>R$ 15.000</td>
-                <td><strong>R$ 37.000</strong></td>
+                <td class="num-right">Norte</td>
+                <td class="num-right">R$ 10.000</td>
+                <td class="num-right">R$ 12.000</td>
+                <td class="num-right">R$ 15.000</td>
+                <td class="num-right"><strong>R$ 37.000</strong></td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <!-- Rodapé com total geral -->
-                <td>Total Geral</td>
-                <td>R$ 10.000</td>
-                <td>R$ 12.000</td>
-                <td>R$ 15.000</td>
-                <td>R$ 37.000</td>
+                <td class="num-right">Total Geral</td>
+                <td class="num-right">R$ 10.000</td>
+                <td class="num-right">R$ 12.000</td>
+                <td class="num-right">R$ 15.000</td>
+                <td class="num-right">R$ 37.000</td>
             </tr>
         </tfoot>
     </table>
     
     <hr>
 
-    <!-- Continuar digitação (Aqui) -->
-
     <!-- MULTIMÍDIA EM HTML5 -->
-
-
+    <h2>Inserindo vídeos locais</h2>
+    <video width="500" poster="assets/limoes-capa.png" controls>
+        <source src="assets/meu-video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
+    <br>
 
     <!-- Inserindo vídeos do YouTube -->
-    <!-- src="https://www.youtube.com/embed/eqUFcr1mI3Y" -->
-
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/eqUFcr1mI3Y"
+        frameborder="0"
+        allow="accelerometer; autoplay"
+        allowfullscreen>
+    </iframe>
+    <br>
 
     <!-- Reproduzir áudios  -->
+     <audio preload="metadata" autoplay controls>
+        <source src="assets/happy-mistake.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+     </audio>
 
   
 
