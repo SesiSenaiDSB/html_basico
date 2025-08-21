@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio - Demonstração HTML Completo</title>
+</head>
+<body>
+    <!-- Cabeçalho da página (header) -->
+    <header>
+        <!-- Logo ou título (texto) -->
+        <h1>João Silva - Desenvolvedor Web</h1>
+        <nav>
+            <!-- Links de navegação -->
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Área de destaque (Conteúdo principal) -->
+     <main>
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <img src="assets/avatar_m.jpg" alt="Foto do João">
+
+            <p>Sou estudante de <strong>Desenvolvimento de sistemas</strong> no SENAI</p>
+            <p>Tenho conhecimento em <em>HTML</em>, <em>CSS</em> e estou aprendendo <em>Java Script</em></p>
+
+            <!-- Lista de habilidades -->
+             <h3>Minhas habilidades</h3>
+             <ul>
+                <li>HTML5 Semântico</li>
+                <li>CSS3 e Responsividade</li>
+                <li>Formulários e Validação</li>
+                <li>Estruturação de dados</li>
+             </ul>
+        </section>
+
+        <!-- Seção de projetos com tabela -->
+        <section id="projetos">
+            <h2>Meus projetos</h2>
+            <table border="1" cellpadding="10" cellspacing="0" width="50%">
+                <thead>
+                    <!-- Títulos das colunas da tabela -->
+                    <tr>
+                        <th>Projeto</th>
+                        <th>Tecnologias</th>
+                        <th>Status</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Site pessoal</td>
+                        <td>HTML, CSS</td>
+                        <td>Concluído</td>
+                        <td><a href="projeto1.html">Ver Projeto</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Sistema de cadastro</td>
+                        <td>HTML, CSS e Java Script</td>
+                        <td>Em andamento</td>
+                        <td><a href="projeto2.html">Ver Projeto</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Seção contato (Formulário simples) -->
+         <section id="contato">
+            <h2>Entre em contato</h2>
+
+            <form action="enviar.php">
+                <fieldset>
+                    <legend>Dados do contato</legend>
+
+                    <label for="nome">Nome</label><br>
+                    <input type="text" id="nome" required><br><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" required><br><br>
+
+                    <label for="assunto">Assunto:</label><br>
+                    <select name="assunto" id="assunto">
+                        <option value="trabalho">Oportunidade de trabalho</option>
+                        <option value="projeto">Proposta de projeto</option>
+                        <option value="geral">Contato geral</option>
+                    </select><br><br>
+
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea name="mensagem" id="mensagem" rows="5"></textarea><br><br>
+
+                    <input type="submit" value="Enviar mensagem">
+
+                </fieldset>
+            </form>
+         </section>
+     </main>
+
+     <!-- Rodapé (Footer) -->
+    
+     <footer>
+        <p>&copy; 2025 João Silva. Desenvolvido durante o curso do SENAI</p>
+        <p>
+            <a href="mailto:joao@exemplo.com">joao@exemplo.com</a>
+            <a href="tel:5511999998888">(11) 99999-8888</a>
+        </p>
+     </footer>
+    
+</body>
+</html>
