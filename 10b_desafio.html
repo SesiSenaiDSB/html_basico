@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Luna Captures - Fotógrafa</title>
+</head>
+<body>
+    <!-- Cabeçalho com navegação -->
+    <header>
+        <h1>📸 Luna Captures</h1>
+        <nav><a href="#sobre">Sobre</a> | <a href="#galeria">Galeria</a> | <a href="#contato">Contato</a></nav>
+    </header>
+
+    <main>
+        <!-- Sobre -->
+        <section id="sobre">
+            <h2>Sobre Luna</h2>
+            <p>Fotógrafa há <strong>8 anos</strong> especializada em <em>momentos únicos</em>.</p>
+            <blockquote>"A fotografia captura não apenas o que vemos, mas o que sentimos."</blockquote>
+        </section>
+
+        <!-- Galeria compacta -->
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <img src="casamento.png" alt="Casamento ao pôr do sol" width="200" height="120">
+            <img src="casamento2.png" alt="Retrato em estúdio" width="200" height="120">
+            <img src="casamento3.png" alt="Retrato em estúdio" width="200" height="120">
+        </section>
+
+        <!-- Serviços -->
+        <section>
+            <h2>Serviços</h2>
+            <ul>
+                <li><strong>Casamentos</strong> - R$ 1.200</li>
+                <li><strong>Retratos</strong> - R$ 350</li>
+                <li><strong>Eventos</strong> - R$ 600</li>
+            </ul>
+        </section>
+
+        <!-- Formulário de contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="enviar.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="evento">Evento:</label>
+                <select id="evento" name="evento">
+                    <option value="casamento">Casamento</option>
+                    <option value="retrato">Retrato</option>
+                    <option value="evento">Evento</option>
+                </select><br><br>
+                
+                <label for="mensagem">Detalhes:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="3"></textarea><br><br>
+                
+                <button type="submit">Solicitar Orçamento</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Luna Captures | <a href="mailto:luna@exemplo.com">luna@exemplo.com</a></p>
+    </footer>
+</body>
+</html>
